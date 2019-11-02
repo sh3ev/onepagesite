@@ -7,6 +7,11 @@ body {
   background: rgb(242, 242, 242);
 }
 
+#logo {
+  padding: 1vh;
+  font-size: 2.5em;
+}
+
 .hero-image {
   display: flex;
   flex-direction: column;
