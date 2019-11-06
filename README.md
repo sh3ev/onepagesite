@@ -35,3 +35,8 @@ function hamburger() {
 
 ***
 
+### And finaly that's how the whole site looks like:
+
+* Link: https://sh3ev.github.io/onepagesite/
+
+![Alt Text](/images/screen.png)
