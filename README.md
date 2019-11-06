@@ -20,7 +20,7 @@ function hamburger() {
 }
 ```
 
-* That simple script looking for element in document and adding new class for this element ("responsive"), and then magic happens ! In CSS file there's .resonsive rules which changing navbar look.
+* That simple script looking for element in document and adding new class for this element ("responsive"), and then magic happens ! In CSS file there's a .responsive rules which changing navbar look.
 
 ![Alt Text](/images/hamburger.gif)
 
@@ -35,8 +35,12 @@ function hamburger() {
 
 ***
 
-### And finaly that's how the whole site looks like:
+## And finaly that's how the whole site looks like:
 
 * Link: https://sh3ev.github.io/onepagesite/
 
 ![Alt Text](/images/screen.png)
+
+* Page on diferent resolutions:
+
+![Alt Text](/images/devices-page.png)
