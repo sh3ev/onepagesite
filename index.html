@@ -6,67 +6,227 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jędrzej Przybyszewski - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
 </head>
 <body>
 <!-- HERO/HEADER AREA -->
   <header>
     <div id="hero-area">
 <!-- Navbar -->
-    <nav class="top-nav">
-      <i class="fa fa-code" id="logo">code</i>
-      <ul class="nav-list">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
+    <div class="menu">
+      <nav class="top-nav" id="top-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+    </div>
+    
 <!-- Hero Area Contents -->
     <div class="hero-image">
       <div class="hero-text">
         <h1 class="hero-header">Welcome</h1>
-        <p>My name is <span><strong>Jędrzej</strong></span></p>
+        <p>My name is <span><strong>Designer</strong></span></p>
+        <a class="btn-work"href="#portfolio">VIEW WORK</a>
+        <a class="btn-contact"href="#contact">CONTACT ME</a>
       </div>
     </div>
     </div>
   </header>
 
 <!-- MAIN CONTENT -->
+<div class="main">
   <section class="about" id="about">
-    <h2>About</h2>
-    <div class="container">
-
+    <div class="about-container">
+      <div class="about-data">
+        <h2>About</h2>
+        <ul>
+          <li>Full name: <span>Jędrzej Przybyszewski</span></li>
+          <li>Age: <span>27 years</span></li>
+          <li>Job: <span>Freelancer</span></li>
+          <li>Telephone: <span>123 456 789</span></li>
+          <li>E-mail: <span>przybyszewski.jedrzej@gmail.com</span></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. ex ea commodo consequat.
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="skills" id="skills">
     <h2>Skills</h2>
-    <div class="container">
+    <div class="skills-container">
+      <div class="skills-data">
+        <div class="img">
+          <img src="images/html.jpg" class="skill-icon">
+        </div>
+        <h3 class="skill-title">HTML 5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Laudantium itaque doloribus accusantium, doloremque consequatur 
+          officiis nam animi tenetur? Distinctio, blanditiis placeat!
+        </p>
+      </div>
+
+      <div class="skills-data">
+          <div class="img">
+            <img src="images/css.png" class="skill-icon">
+          </div>
+          <h3>CSS 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laudantium itaque doloribus accusantium, doloremque consequatur 
+            officiis nam animi tenetur? Distinctio, blanditiis placeat!
+          </p>
+        </div>
+
+        <div class="skills-data">
+            <div class="img">
+              <img src="images/js.png" class="skill-icon">
+            </div>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Laudantium itaque doloribus accusantium, doloremque consequatur 
+              officiis nam animi tenetur? Distinctio, blanditiis placeat!
+            </p>
+          </div>
+
+      
+      
 
     </div>
 
   </section>
 
   <section class="portfolio" id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="container">
-
+    <h2 id="portfolio-title">Portfolio</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-item portfolio-item-1">
+        <div class="portfolio-img">
+          <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+        </div>
+        <div class="portfolio-desc">
+          <h2>Project 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Similique quae est delectus soluta consequatur. 
+            Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+            earum harum itaque minima necessitatibus nam aspernatur!
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item portfolio-item-2">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+          </div>
+          <div class="portfolio-desc">
+            <h2>Project 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Similique quae est delectus soluta consequatur. 
+              Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+              earum harum itaque minima necessitatibus nam aspernatur!
+            </p>
+          </div>
+      </div>
+      <div class="portfolio-item portfolio-item-3">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+          </div>
+          <div class="portfolio-desc">
+            <h2>Project 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Similique quae est delectus soluta consequatur. 
+              Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+              earum harum itaque minima necessitatibus nam aspernatur!
+            </p>
+          </div>
+      </div>
+      <div class="portfolio-item portfolio-item-4">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+          </div>
+          <div class="portfolio-desc">
+            <h2>Project 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Similique quae est delectus soluta consequatur. 
+              Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+              earum harum itaque minima necessitatibus nam aspernatur!
+            </p>
+          </div>
+      </div>
+      <div class="portfolio-item portfolio-item-5">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+          </div>
+          <div class="portfolio-desc">
+            <h2>Project 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Similique quae est delectus soluta consequatur. 
+              Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+              earum harum itaque minima necessitatibus nam aspernatur!
+            </p>
+          </div>
+      </div>
+      <div class="portfolio-item portfolio-item-6">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c" alt="">
+          </div>
+          <div class="portfolio-desc">
+            <h2>Project 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Similique quae est delectus soluta consequatur. 
+              Esse ipsa sequi quam error cupiditate ipsum ea autem, 
+              earum harum itaque minima necessitatibus nam aspernatur!
+            </p>
+          </div>
+      </div>
     </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <div class="container">
+    
+    <div class="contact-container">
+      <h2>Contact</h2>
       
     </div>
   </section>
+</div>
+
 
 <!-- FOOTER -->
   <footer>
-  
+  <p>© 2019 Jędrzej Przybyszewski</p>
   </footer>
+
+  <script>
+  // hamburger menu
+    function hamburger() {
+      var x = document.getElementById("top-nav");
+      if (x.className === "top-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-nav";
+      }
+    }
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("top-nav");
+    var btns = header.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+
+  </script>
 </body>
 </html>
